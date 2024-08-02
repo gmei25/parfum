@@ -10,25 +10,23 @@ import Card from 'react-bootstrap/Card';
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
-
     const {id} = useParams();
 
     useEffect(() => {
-        const fetchData = new Promise((resolve) => {
+        new Promise((resolve) => {
             setTimeout(() => resolve(data), 1000);
-        });
-        fetchData.then((response) => {
-            if (!id) {
+        })
+        .then((response) => {
+            if(!id){
                 setItems(response);
             }else{
-                const filteredItems = response.filter(item => item.category === id);
-                setItems(filteredItems);
+                const filtered = response.filter(i => i.category === id);
+                setItems(filtered); 
             }
-            setLoading(false);
+        })
+        .finally(() => setLoading(false));
+        }, [id]);
             
-        });
-    }, [id]);
-
     if(loading) return <Container className="mt-4">Espera un momento...</Container>; 
 
     if(items.length === 0) 

@@ -1,7 +1,7 @@
 [
     {
         "name": "Emerald Green 75ml",
-        "id": "perfume 1",
+        "id": 1,
         "category": "perfumes",
         "detail": "THE HOUSE OF OUD",
         "img": "/src/img/emerald.jpg"
@@ -10,7 +10,7 @@
 
     {
         "name": "Casamorati",
-        "id": "perfume 2",
+        "id": 2,
         "category": "perfumes",
         "detail": "CASAMORATI",
         "img": "/src/img/perfume2.jpg"
@@ -20,7 +20,7 @@
     {
 
         "name": "Atlantide",
-        "id": "perfume 3",
+        "id": 3,
         "category": "perfumes",
         "detail": "TIZIANA TERENZI",
         "img": "/src/img/perfume3.jpg"
@@ -30,7 +30,7 @@
     {
 
         "name": "Vitamino Color Shampoo 300 ml",
-        "id": "capilares 1",
+        "id": 4,
         "category": "capilares",
         "detail": "LOREAL",
         "img": "/src/img/Shampoo1.webp"
@@ -40,7 +40,7 @@
     {
 
         "name": "Absolut reapair shampoo gold quinoa 300ml",
-        "id": "capilares 2",
+        "id": 5,
         "category": "capilares",
         "detail": "LOREAL",
         "img": "/src/img/shampoo2.webp"
@@ -50,7 +50,7 @@
     {
 
         "name": "Absolut repair gold quinoa acondicionador 200ml",
-        "id": "capilares 3",
+        "id": 6,
         "category": "capilares",
         "detail": "LOREAL",
         "img": "/src/img/acondicionador.webp"
