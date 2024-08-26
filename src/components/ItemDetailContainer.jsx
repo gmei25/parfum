@@ -41,7 +41,7 @@ export const ItemDetailContainer = () => {
             <h3>{item.description}</h3>
             <img src={item.image} height={350} alt={item.name} />
             <br />
-            <b>{item.price}</b>
+            <b>Precio: {item.price}</b><br />
             <ItemCount stock={item.stock} onAdd={onAdd} />
         </Container>
     );

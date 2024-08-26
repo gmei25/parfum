@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const ItemsContext = createContext();
 
-export const ItemsProvider = ({ children }) => {
+export const Prov = ({ children }) => {
     const [items, setItems] = useState([]);
 
     const reset = () => setItems([]);
@@ -25,7 +25,7 @@ export const ItemsProvider = ({ children }) => {
     };
 
     const removeItem = (id) => {
-        if (!id) return;
+        if (!id) return
         const remove = items.filter(i => i.id !== id);
         setItems(remove);
     };

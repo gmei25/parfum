@@ -1,4 +1,4 @@
-//import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { initializeApp } from "firebase/app";
 import App from './App.jsx';

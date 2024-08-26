@@ -17,14 +17,14 @@ export const ItemCount = ({ stock, onAdd }) => {
 
     const handleAdd = () =>{
         onAdd(count);
-        setCount(1);
+        setCount(0);
     };
 
     return (
     <>
-    <button onClick={handleIncrease}>-</button>
+    <button onClick={handleDecrease}>-</button>
+    <button onClick={handleIncrease}>+</button>
     <span>{count}</span>
-    <button onClick={handleDecrease}>+</button>
     <hr />
     <button onClick={handleAdd}>Agregar al carrito</button>
     </>
